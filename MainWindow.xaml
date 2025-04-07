@@ -1,0 +1,125 @@
+﻿<Window x:Class="LearnIO.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LearnIO"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800"
+        WindowState="Maximized"
+        Topmost="True">
+    
+    <Grid x:Name="Rectangle" Background="#00101A">
+        
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".1*"></RowDefinition>
+            <RowDefinition Height=".8*"></RowDefinition>
+            <RowDefinition Height=".1*"></RowDefinition>
+            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".33*"></ColumnDefinition>
+            <ColumnDefinition Width=".40*"></ColumnDefinition>
+            <ColumnDefinition Width=".33*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <Rectangle Grid.Row="1" Grid.Column="1" Height="auto" Width="auto" Fill="#021521"
+                   RadiusX="50" RadiusY="50">
+        </Rectangle>
+        <!-- Main Form -->
+        <Grid  Grid.Row="1" Grid.Column="1">
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="0.1*"></RowDefinition>
+                <RowDefinition Height="0.1*"></RowDefinition>
+                <RowDefinition Height="0.1*"></RowDefinition>
+                <RowDefinition Height="0.2*"></RowDefinition>
+                <RowDefinition Height="0.1*"></RowDefinition>
+                <RowDefinition Height="0.1*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".2*"></ColumnDefinition>
+                <ColumnDefinition Width=".8*"></ColumnDefinition>
+                <ColumnDefinition Width=".2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <!-- Login -->
+            <Viewbox Grid.Row="0" Grid.Column="1">
+                <TextBlock x:Name="Login" 
+           Text="LOGIN" Foreground="White" FontWeight="Bold" 
+           FontFamily="C:\Users\DT User\source\repos\LearnIO\Fonts\#Josefin Sans"
+           VerticalAlignment="Center" HorizontalAlignment="Center"
+           FontSize="90"
+           Margin="10 40 10 40"/>
+            </Viewbox>
+
+
+            <!-- username -->
+            <Viewbox Grid.Row="1" Grid.Column="1">
+                <TextBox 
+                    Style="{StaticResource PlaceholderTextBox}"
+                    Tag="username"
+                    Width="130" 
+                    Margin="10 10 10 0" Foreground="White" BorderBrush="#2b3b44"
+                    FontFamily="C:\Users\DT User\source\repos\LearnIO\Fonts\#Josefin Sans"
+                    FontSize="10" 
+                    GotFocus="TextBox_GotFocus"
+                    LostFocus="TextBox_LostFocus"
+                    TextChanged="TextBox_TextChanged"
+                         ></TextBox>
+            </Viewbox>
+
+            <!-- password -->
+            <Viewbox Grid.Row="2" Grid.Column="1">
+                <PasswordBox Width="130" Background="Transparent" BorderThickness="0 0 0 0.5" 
+                 Margin="10 10 10 0" Foreground="White" BorderBrush="#2b3b44"
+                 FontFamily="C:\Users\DT User\source\repos\LearnIO\Fonts\#Josefin Sans"
+                 FontSize="10"
+                 Style="{StaticResource PlaceholderPasswordBox}"
+                 Tag="password"
+                 x:Name="PasswordBox"
+                 PasswordChanged="PasswordBox_PasswordChanged"
+                 GotFocus="PasswordBox_GotFocus"
+                 LostFocus="PasswordBox_LostFocus"/>
+            </Viewbox>
+
+            <!-- forgot password -->
+            <Viewbox Grid.Row="3" Grid.Column="1">
+                <TextBlock Foreground="#2b3b44" VerticalAlignment="Top" HorizontalAlignment="Left" 
+                           FontFamily="C:\Users\DT User\source\repos\LearnIO\Fonts\#Josefin Sans"
+                           Text="Forgot password?" Margin="10 10 10 10" FontSize="3"></TextBlock>
+            </Viewbox>
+
+            <!-- login button -->
+            <Viewbox Grid.Row="4" Grid.Column="1">
+                <Button Style="{StaticResource ButtonStyle1}"  Background="#425058" Foreground="White" 
+                        BorderThickness="0"
+                        FontFamily="C:\Users\DT User\source\repos\LearnIO\Fonts\#Josefin Sans"
+                        FontWeight="Black"
+                        Click="LoginButton_Click">
+
+                    <TextBlock Text="Login" FontSize="5"></TextBlock>
+                </Button>
+            </Viewbox>
+            <!-- signup -->
+            <Viewbox Grid.Row="5" Grid.Column="1">
+                <TextBlock Foreground="#2b3b44" 
+               VerticalAlignment="Center" 
+               HorizontalAlignment="Left"
+               FontFamily="C:\Users\DT User\source\repos\LearnIO\Fonts\#Josefin Sans"
+               Margin="4 10 10 10" 
+               FontSize="5">
+        <Run Text="Don’t have an account? - " />
+        <Hyperlink Click="SignUp_Click">
+            <Run Text="Sign up" />
+        </Hyperlink>
+                </TextBlock>
+            </Viewbox>
+
+
+        </Grid>
+
+    </Grid>
+</Window>
