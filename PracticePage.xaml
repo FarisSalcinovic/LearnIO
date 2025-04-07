@@ -9,6 +9,17 @@
         WindowState="Maximized"
         Topmost="True">
     <Grid Background="#00101A">
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".3*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".2*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Test" Foreground="White"></TextBlock>
     </Grid>
 </Window>
