@@ -23,5 +23,14 @@ namespace LearnIO
         {
             InitializeComponent();
         }
+
+        private void LogOut_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow MainWindow = new MainWindow();
+            MainWindow.Show();
+
+            // Optional: Close or hide current window
+            this.Close(); // or this.Hide();
+        }
     }
 }

@@ -8,18 +8,99 @@
         Title="PracticePage" Height="450" Width="800"
         WindowState="Maximized"
         Topmost="True">
-    <Grid Background="#00101A">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width=".3*"></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>
+	<Grid Background="#00101A">
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height=".2*"></RowDefinition>
-            <RowDefinition></RowDefinition>
-            
-        </Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width=".3*"></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+		</Grid.ColumnDefinitions>
 
-        <TextBlock Text="Test" Foreground="White"></TextBlock>
-    </Grid>
+
+
+		<Grid.RowDefinitions>
+			<RowDefinition Height=".2*"></RowDefinition>
+
+
+		</Grid.RowDefinitions>
+
+		<Grid Grid.Row="1" Grid.Column="0">
+			<Grid.RowDefinitions>
+				<RowDefinition Height=".1*"></RowDefinition>
+				<RowDefinition Height=".1*"></RowDefinition>
+				<RowDefinition Height=".1*"></RowDefinition>
+				<RowDefinition Height=".1*"></RowDefinition>
+				<RowDefinition Height=".1*"></RowDefinition>
+				<RowDefinition Height=".1*"></RowDefinition>
+				<RowDefinition Height=".5*"></RowDefinition>
+			</Grid.RowDefinitions>
+			<Viewbox Grid.Row="0">
+				<TextBlock Grid.Row="0" Text="*John Doe" Foreground="White" FontWeight="Bold"
+                           FontFamily="C:\Users\DT User\source\repos\LearnIO\Fonts\#Josefin Sans"
+                           VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+			</Viewbox>
+
+			<Viewbox Grid.Row="1">
+				<TextBlock Grid.Row="0" Text="Practice" Foreground="White" FontWeight="Bold"
+               FontFamily="C:\Users\DT User\source\repos\LearnIO\Fonts\#Josefin Sans"
+               VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+			</Viewbox>
+
+			<Viewbox Grid.Row="2">
+				<TextBlock Grid.Row="0" Text="Practice" Foreground="White" FontWeight="Bold"
+               FontFamily="C:\Users\DT User\source\repos\LearnIO\Fonts\#Josefin Sans"
+               VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+			</Viewbox>
+
+			<Viewbox Grid.Row="3">
+				<TextBlock Grid.Row="0" Text="Practice" Foreground="White" FontWeight="Bold"
+               FontFamily="C:\Users\DT User\source\repos\LearnIO\Fonts\#Josefin Sans"
+               VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+			</Viewbox>
+
+			<Viewbox Grid.Row="4">
+				<TextBlock Grid.Row="0" Text="Practice" Foreground="White" FontWeight="Bold"
+               FontFamily="C:\Users\DT User\source\repos\LearnIO\Fonts\#Josefin Sans"
+               VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+			</Viewbox>
+
+			<Viewbox Grid.Row="6">
+				<Button Style="{StaticResource ButtonStyle1}"  Background="#425058" Foreground="White"
+                        BorderThickness="0"
+                        FontFamily="C:\Users\DT User\source\repos\LearnIO\Fonts\#Josefin Sans"
+                        FontWeight="Black"
+                        Margin="10 10 10 -20"
+                        Click="LogOut_Click">
+
+
+					<TextBlock Text="LOG OUT" FontSize="5"></TextBlock>
+				</Button>
+			</Viewbox>
+
+
+
+
+		</Grid>
+
+		<Grid Grid.Row="0" Grid.Column="1">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="0.2*"></RowDefinition>
+				<RowDefinition></RowDefinition>
+			</Grid.RowDefinitions>
+
+			<!-- Learn.io header -->
+			<TextBlock Text="LEARN.IO" Foreground="White" FontWeight="Bold"
+                           FontFamily="C:\Users\DT User\source\repos\LearnIO\Fonts\#Josefin Sans"
+                           VerticalAlignment="Top" HorizontalAlignment="Left"
+                           FontSize="100"></TextBlock>
+
+
+			<!-- Main Form -->
+
+
+
+
+		</Grid>
+
+
+	</Grid>
 </Window>
